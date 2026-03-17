@@ -11,7 +11,7 @@ import os
 st.set_page_config(page_title="Mango Classifier", page_icon="🥭", layout="centered")
 
 # Title
-st.title("🥭 Bangladeshi Mango Variety Classifier")
+st.title(" Bangladeshi Mango Variety Classifier")
 st.write("Upload an image of a mango and the model will predict its variety.")
 
 # Function to load model and metadata (cached)
@@ -75,7 +75,7 @@ if uploaded_file is not None:
     # Show results
     st.markdown("---")
     st.subheader("Prediction Result")
-    st.write(f"**Predicted Variety:** 🥭 **{class_name}**")
+    st.write(f"**Predicted Variety:** -> **{class_name}**")
     st.write(f"**Confidence:** {confidence_percent:.2f}%")
 
     # Progress bar
